@@ -1,0 +1,6 @@
+/node_modules
+/isomorphic-react-fittext.d.ts
+/isomorphic-react-fittext.js
+/isomorphic-react-fittext.js.map
+/coverage
+.nyc_output

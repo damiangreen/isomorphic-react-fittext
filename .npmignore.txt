@@ -1,0 +1,7 @@
+/node_modules
+/src
+/.gitignore
+/.npmignore
+/tsconfig.json
+/isomorphic-react-fittext.js.map
+/yarn.lock

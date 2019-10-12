@@ -1,0 +1,37 @@
+{
+  "name": "isomorphic-react-fittext",
+  "version": "1.3.0",
+  "main": "isomorphic-react-fittext.js",
+  "author": "Damian Green <damian@gcoders.com>",
+  "description": "React Hook to trace functional component updates.",
+  "directories": {
+    "lib": "src",
+    "test": "tests"
+  },
+  "files": [
+    "package.json",
+    "isomorphic-react-fittext.d.ts",
+    "isomorphic-react-fittext.js"
+  ],
+  "homepage": "https://github.com/damiangreen/isomorphic-react-fittext#readme",
+  "license": "MIT",
+  "repository": "github:damiangreen/isomorphic-react-fittext",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "types": "./isomorphic-react-fittext.d.ts",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.0",
+    "@types/react-dom": "^16.8.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.1.3"
+  }
+}
