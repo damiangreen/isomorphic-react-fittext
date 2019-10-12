@@ -5,7 +5,7 @@
     "downlevelIteration": true,
     "jsx": "react",
     "lib": ["dom", "es5", "es2015.promise", "scripthost", "es2017"],
-    "module": "commonjs",
+    "module": "es2015",
     "moduleResolution": "Node",
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
