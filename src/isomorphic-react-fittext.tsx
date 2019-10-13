@@ -1,4 +1,4 @@
-import React, { Children, cloneElement, ReactElement, useEffect } from "react";
+import { Children, cloneElement, useEffect, ReactNode } from "react";
 
 const nodes = new Map<HTMLElement, ReactFitTextProps>();
 
@@ -25,7 +25,7 @@ function updateFontSize() {
 }
 
 interface ReactFitTextProps {
-  children: ReactElement;
+  children: ReactNode;
   compressor: number;
   minFontSize: number;
   maxFontSize: number;
@@ -54,7 +54,7 @@ const ReactFitText = (props: ReactFitTextProps) => {
 
   updateFontSize();
 
-  return Children.map(props.children, (child: ReactElement) =>
+  return Children.map(props.children, (child: any) =>
     cloneElement(child, {
       ref: (element: HTMLElement) => {
         if (element) {
@@ -69,7 +69,6 @@ const ReactFitText = (props: ReactFitTextProps) => {
 ReactFitText.defaultProps = {
   compressor: 1.0,
   minFontSize: Number.NEGATIVE_INFINITY,
-  maxFontSize: Number.POSITIVE_INFINITY,
-  children: <></>
+  maxFontSize: Number.POSITIVE_INFINITY
 };
 export default ReactFitText;
